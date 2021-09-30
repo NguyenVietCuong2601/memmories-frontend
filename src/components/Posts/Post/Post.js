@@ -12,10 +12,10 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import moment from "moment";
 
-import makeStyles from "./styles";
+import useStyles from "./styles";
 
 const Post = ({ post }) => {
-    const classes = makeStyles();
+    const classes = useStyles();
     return (
         <Card className={classes.card}>
             <CardMedia
@@ -30,13 +30,13 @@ const Post = ({ post }) => {
                 </Typography>
             </div>
             <div className={classes.overlay2}>
-                <button
+                <Button
                     style={{ color: "white" }}
                     size="small"
                     onClick={() => {}}
                 >
-                    <MoreHorizIcon fontSize="default" />
-                </button>
+                    <MoreHorizIcon fontSize="medium" />
+                </Button>
             </div>
             <div className={classes.details}>
                 <Typography variant="body2" color="textSecondary">
