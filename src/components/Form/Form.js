@@ -4,7 +4,7 @@ import FileBase from "react-file-base64";
 import { useDispatch } from "react-redux";
 
 import makeStyles from "./styles";
-import { createPost } from '../../actions/posts'
+import { createPost } from "../../actions/posts";
 
 const Form = () => {
     const [postData, setPostData] = useState({
